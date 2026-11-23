@@ -1,0 +1,4 @@
+vendor/
+.phpunit.cache/
+composer.local.json
+composer.local.lock

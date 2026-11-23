@@ -1,0 +1,40 @@
+{
+    "name": "legit-health/medical-device-plus-sdk-bundle",
+    "description": "Symfony bundle that integrates the SDK for Legit.Health Plus, the Legit.Health medical device API",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LegitHealth\\MedicalDevicePlusBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LegitHealth\\MedicalDevicePlusBundle\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Legit.Health",
+            "homepage": "https://legit.health"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.4",
+        "legit-health/medical-device-plus-sdk": "^1.0",
+        "psr/cache": "^2.0 || ^3.0",
+        "symfony/framework-bundle": "^8.0",
+        "symfony/http-client": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "symfony/cache": "^8.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
